@@ -8,7 +8,7 @@
 import XCTest
 @testable import RecipeApp
 
-class MockNetworkService: NetworkServiceProtocol {
+final class MockNetworkService: NetworkServiceProtocol {
     var shouldReturnError = false
     var mockData: Data?
     

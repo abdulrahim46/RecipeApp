@@ -8,7 +8,7 @@
 import XCTest
 @testable import RecipeApp
 
-class RecipeRepositoryTests: XCTestCase {
+final class RecipeRepositoryTests: XCTestCase {
     var repository: RecipeRepository!
     var mockService: MockNetworkService!
     
