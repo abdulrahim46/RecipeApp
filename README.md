@@ -4,19 +4,20 @@ This is a SwiftUI-based recipe app that displays a list of recipes fetched from 
 
 Steps to Run the App
 
-	1.	Clone the Repository:
+#Clone the Repository:
 
 git clone https://github.com/abdulrahim46/RecipeApp.git
 
 
-	2.	Open the Project:
+#Open the Project:
 	•	Open the .xcodeproj or .xcworkspace file in Xcode.
-	3.	Install Dependencies (if using external libraries):
-	•	If using external libraries (like Kingfisher), ensure you have the required dependencies installed via Swift Package Manager. Xcode will handle this automatically if the packages are listed in the Package.swift file.
-	4.	Run the App:
+#Install Dependencies (if using external libraries):
+	•	If using external libraries (like Kingfisher), ensure you have the required dependencies installed via Swift Package Manager. Xcode will handle this automatically if the packages are listed in the Package.swift file.	
+ 
+ #Run the App:
 	•	Select your target simulator (or physical device).
 	•	Press Cmd + R to build and run the app.
-	5.	Run Tests:
+ #Run Tests:
 	•	To run the unit tests, press Cmd + U or go to Product > Test in the menu bar.
 
 Focus Areas
