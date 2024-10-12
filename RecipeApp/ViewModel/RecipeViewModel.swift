@@ -27,10 +27,10 @@ class RecipeViewModel: ObservableObject {
         do {
             let fetchedRecipes = try await repository.getRecipes()
             
-            if fetchedRecipes.isEmpty {
+            if fetchedRecipes.recipes.isEmpty {
                 errorMessage = "No recipes available."
             } else {
-                recipes = fetchedRecipes
+                recipes = fetchedRecipes.recipes
             }
         } catch {
             errorMessage = error.localizedDescription
