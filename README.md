@@ -1,4 +1,4 @@
-Recipe App
+# Recipe App
 
 This is a SwiftUI-based recipe app that displays a list of recipes fetched from a remote API. The app uses MVVM architecture and leverages modern Swift concurrency with async/await. Unit tests have been written to ensure robustness in key areas, including networking, repository handling, and view model logic.
 
