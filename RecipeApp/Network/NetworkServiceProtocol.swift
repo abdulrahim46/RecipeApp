@@ -14,5 +14,5 @@ protocol NetworkServiceProtocol {
 
 // MARK: - Protocol for Recipe Repository
 protocol RecipeRepositoryProtocol {
-    func getRecipes() async throws -> [Recipe]
+    func getRecipes() async throws -> RecipeResponse
 }

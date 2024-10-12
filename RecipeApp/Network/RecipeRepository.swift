@@ -15,7 +15,7 @@ final class RecipeRepository: RecipeRepositoryProtocol {
         self.networkService = networkService
     }
     
-    func getRecipes() async throws -> [Recipe] {
-        return try await networkService.fetchData(from: ServiceURLs.recipesURL, responseType: [Recipe].self)
+    func getRecipes() async throws -> RecipeResponse {
+        return try await networkService.fetchData(from: ServiceURLs.recipesURL, responseType: RecipeResponse.self)
     }
 }

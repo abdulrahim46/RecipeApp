@@ -14,13 +14,18 @@ class RecipeViewModel: ObservableObject {
     @Published var errorMessage: String? = nil
     @Published var isLoading: Bool = false
     
+    private let repository: RecipeRepositoryProtocol
+    
+    init(repository: RecipeRepositoryProtocol) {
+        self.repository = repository
+    }
+    
     func loadRecipes() async {
         isLoading = true
         errorMessage = nil
-        let recipeURL = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json"
         
         do {
-            let fetchedRecipes = try await NetworkService.shared.fetchRecipes(from: recipeURL)
+            let fetchedRecipes = try await repository.getRecipes()
             
             if fetchedRecipes.isEmpty {
                 errorMessage = "No recipes available."
